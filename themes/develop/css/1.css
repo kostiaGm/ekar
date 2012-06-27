@@ -248,3 +248,42 @@ div.breadcrumbs {
 #footer a {
 	color:#999;
 }
+
+/*form*/
+
+div.form {
+    
+}
+
+div.form div.row {    
+    margin:5px 20px;
+    clear: both;
+}
+
+div.form div.row label {    
+    height: 15px;
+  
+    width: 100px;
+    display: block;
+    float: left;
+    padding-top: 10px;
+    
+}
+
+div.form div.row input {
+    float: right;
+    width: 250px;
+    height: 25px;
+    margin-top: 4px;
+    
+}
+
+div.form div.row.buttons input {
+ 
+    width: 150px;
+    height: 25px;
+}
+
+p.hint {
+    clear: both;
+}
