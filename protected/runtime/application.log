@@ -8,3 +8,1103 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/index
 in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (21)
 in /home/kot/public_html/ekar/www/index.php (13)
+2012/06/27 05:19:45 [error] [exception.Exception] exception 'Exception' with message 'PageUrlRule rule not found' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/index', 'site/index')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://ekar/index.php?r=site/index
+---
+2012/06/27 05:22:03 [error] [exception.Exception] exception 'Exception' with message 'Property "PageUrlRule.singleRule" is not defined.' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/index', 'site/index')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://ekar/index.php?r=site/index
+---
+2012/06/27 05:22:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/index
+---
+2012/06/27 05:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 05:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/login
+---
+2012/06/27 06:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 06:30:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 06:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 06:31:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 06:33:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 06:33:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 06:36:39 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:46
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 06:55:26 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 06:56:00 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 06:59:31 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 07:00:22 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 07:02:04 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 07:02:32 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:44
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 07:02:51 [error] [php] trim() expects parameter 1 to be string, object given (/home/kot/public_html/yii/framework/web/CWebApplication.php:308)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/contact
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/06/27 07:03:22 [error] [php] trim() expects parameter 1 to be string, object given (/home/kot/public_html/yii/framework/web/CWebApplication.php:308)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/contact
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/06/27 07:04:05 [error] [php] include(HttpException.php): failed to open stream: No such file or directory (/home/kot/public_html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php(43): spl_autoload_call()
+#1 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl()
+#2 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#3 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/contact
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (43)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/06/27 07:04:13 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:46
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 07:05:03 [error] [exception.Exception] exception 'Exception' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:46
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'site/contact', 'site/contact')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://ekar/site/page
+---
+2012/06/27 07:05:16 [error] [php] trim() expects parameter 1 to be string, object given (/home/kot/public_html/yii/framework/web/CWebApplication.php:308)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/site/contact
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/06/27 07:12:40 [error] [php] Missing argument 1 for PageUrlRule::singleRule(), called in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php on line 60 and defined (/home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:71)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl()
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/gii
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (71)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (60)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (42)
+2012/06/27 07:13:37 [error] [php] trim() expects parameter 1 to be string, object given (/home/kot/public_html/yii/framework/web/CWebApplication.php:308)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/gii
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/06/27 07:15:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "giiw".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('giiw')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/giiw
+---
+2012/06/27 08:20:15 [error] [php] Undefined variable: url (/home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:79)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl()
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (79)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (65)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (47)
+2012/06/27 08:21:19 [error] [php] include(CActiveRecords.php): failed to open stream: No such file or directory (/home/kot/public_html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/models/Urls.php(12): spl_autoload_call()
+#1 /home/kot/public_html/yii/framework/YiiBase.php(418): include()
+#2 unknown(0): autoload()
+#3 /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php(78): spl_autoload_call()
+#4 /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php(65): PageUrlRule->singleRule()
+#5 /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php(47): PageUrlRule->runRule()
+#6 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl()
+#7 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#8 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/models/Urls.php (12)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (78)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (65)
+2012/06/27 08:21:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ekar.url' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `url`.
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (78)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (65)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (47)
+2012/06/27 08:21:52 [error] [exception.Exception] exception 'Exception' with message 'The table "url" for active record class "Urls" cannot be found in the database.' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:49
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), '', '')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/
+---
+2012/06/27 08:23:13 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.defautController" is not defined.' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/base/CModule.php(106): CComponent->__get('defautControlle...')
+#1 /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php(31): CModule->__get('defautControlle...')
+#2 /home/kot/public_html/yii/framework/web/CUrlManager.php(299): PageUrlRule->createUrl(Object(CUrlManager), 'site/index', Array, '&')
+#3 /home/kot/public_html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl('site/index', Array, '&')
+#4 /home/kot/public_html/yii/framework/web/CController.php(968): CApplication->createUrl('site/index', Array, '&')
+#5 /home/kot/public_html/yii/framework/web/helpers/CHtml.php(1095): CController->createUrl('/site/index', Array)
+#6 /home/kot/public_html/yii/framework/web/helpers/CHtml.php(381): CHtml::normalizeUrl(Array)
+#7 /home/kot/public_html/yii/framework/zii/widgets/CMenu.php(240): CHtml::link('Home', Array, Array)
+#8 /home/kot/public_html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem(Array)
+#9 /home/kot/public_html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive(Array)
+#10 /home/kot/public_html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu(Array)
+#11 /home/kot/public_html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#12 /home/kot/public_html/ekar/www/themes/develop/views/layouts/main.php(24): CBaseController->widget('zii.widgets.CMe...', Array)
+#13 /home/kot/public_html/yii/framework/web/CBaseController.php(127): require('/home/kot/publi...')
+#14 /home/kot/public_html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/kot/publi...', Array, true)
+#15 /home/kot/public_html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/home/kot/publi...', Array, true)
+#16 /home/kot/public_html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#17 /home/kot/public_html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#18 /home/kot/public_html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#19 /home/kot/public_html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#20 /home/kot/public_html/ekar/www/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#21 /home/kot/public_html/yii/framework/web/CBaseController.php(127): require('/home/kot/publi...')
+#22 /home/kot/public_html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/kot/publi...', Array, true)
+#23 /home/kot/public_html/yii/framework/web/CController.php(785): CBaseController->renderFile('/home/kot/publi...', Array, true)
+#24 /home/kot/public_html/ekar/www/protected/controllers/SiteController.php(32): CController->render('index')
+#25 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#26 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#27 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#28 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#30 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#31 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#32 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/
+---
+2012/06/27 10:21:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "some-url".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('some-url')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/some-url
+---
+2012/06/27 10:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "some-url".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('some-url')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/some-url
+---
+2012/06/27 10:52:52 [error] [exception.Exception] exception 'Exception' with message 'Property "Urls.module" is not defined.' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:49
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'some-url', 'some-url')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/some-url
+---
+2012/06/27 10:53:15 [error] [exception.Exception] exception 'Exception' with message 'Property "PageUrlRule.action" is not defined.' in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:49
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl(Object(CUrlManager), Object(CHttpRequest), 'some-url', 'some-url')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/some-url
+---
+2012/06/27 10:55:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/some-url".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/some-url')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:05:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in /home/kot/public_html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CController.php(271): CController->missingAction('test')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('test')
+#2 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/test')
+#3 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:06:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/kot/public_html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('test')
+#4 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/test')
+#5 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/test".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/test')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/test".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/test')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/test".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/test')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:11:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/ru/site/test".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('/ru/site/test')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:11:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/test".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/test')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/some-url
+---
+2012/06/27 11:27:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/page".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/page')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/ru/some-url
+---
+2012/06/27 11:27:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/ru/page
+---
+2012/06/27 11:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/page".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/page')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:28:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/kot/public_html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#5 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://ekar/ru/page
+---
+2012/06/27 11:28:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/kot/public_html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#5 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://ekar/
+---
+2012/06/27 11:28:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/kot/public_html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#5 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://ekar/
+---
+2012/06/27 11:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/page".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/page')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/
+---
+2012/06/27 11:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/ru/page
+---
+2012/06/27 11:30:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/ru/page
+---
+2012/06/27 11:31:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/ru/page
+---
+2012/06/27 11:32:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/site/contact
+---
+2012/06/27 11:32:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:33:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:33:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/site/contact
+---
+2012/06/27 11:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/contact
+---
+2012/06/27 11:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 11:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/site/contact
+---
+2012/06/27 11:35:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/site/contact
+---
+2012/06/27 11:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/site/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/site/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/site/contact
+---
+2012/06/27 11:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+---
+2012/06/27 11:41:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/
+---
+2012/06/27 11:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/
+---
+2012/06/27 11:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<_a>".' in /home/kot/public_html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CController.php(271): CController->missingAction('<_a>')
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('<_a>')
+#2 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/<_a>')
+#3 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/
+---
+2012/06/27 11:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/contact
+HTTP_REFERER=http://ekar/ru/login
+---
+2012/06/27 11:55:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/index".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/index')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/index
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/page".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/page')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/ru/index
+---
+2012/06/27 11:56:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/page".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/page')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:56:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/login')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/login
+HTTP_REFERER=http://ekar/ru/page
+---
+2012/06/27 11:56:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:56:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /home/kot/public_html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /home/kot/public_html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /home/kot/public_html/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /home/kot/public_html/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/page')
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/login')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/login
+HTTP_REFERER=http://ekar/ru/page
+---
+2012/06/27 11:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/page".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/page')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/page
+HTTP_REFERER=http://ekar/
+---
+2012/06/27 11:58:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/ru/contact
+---
+2012/06/27 11:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/captcha
+HTTP_REFERER=http://ekar/en/contact
+---
+2012/06/27 11:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/captcha
+HTTP_REFERER=http://ekar/en/contact
+---
+2012/06/29 03:52:21 [error] [php] Undefined variable: pathInfo (/home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:134)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): PageUrlRule->parseUrl()
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/gii
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (134)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (82)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (64)
+2012/06/29 03:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:52:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:55:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:55:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:55:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:56:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:57:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 03:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/gii/default/login".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/gii/default/...')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/gii/default/login
+---
+2012/06/29 04:24:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/captcha
+HTTP_REFERER=http://ekar/en/contact
+---
+2012/06/29 04:24:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/captcha
+HTTP_REFERER=http://ekar/en/contact
+---
+2012/06/29 04:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/captcha
+HTTP_REFERER=http://ekar/contact
+---
+2012/06/29 04:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/captcha
+HTTP_REFERER=http://ekar/contact
+---
+2012/06/29 04:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/captcha
+HTTP_REFERER=http://ekar/contact
+---
+2012/06/29 04:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/contact
+---
+2012/06/29 04:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ru/captcha".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ru/captcha')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ru/captcha
+HTTP_REFERER=http://ekar/contact
+---
+2012/06/29 04:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/contact".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/contact')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/contact
+---
+2012/06/29 04:27:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/admin".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('en/admin')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/en/admin
+---
+2012/06/29 04:29:10 [error] [php] Undefined variable: url (/home/kot/public_html/ekar/www/protected/components/PageUrlRule.php:149)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/en/admin
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (149)
+in /home/kot/public_html/ekar/www/protected/components/PageUrlRule.php (67)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/06/29 04:47:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/fff".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/fff')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/fff
+---
+2012/06/29 04:48:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/fff".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/fff')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/fff
+---
+2012/06/29 04:48:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/fff".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/fff')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/fff
+---
+2012/06/29 04:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/fff".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/fff')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/fff
+---
+2012/06/29 04:49:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/fff".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/fff')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/fff
+---
+2012/06/29 04:49:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/fff".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/fff')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/fff
+---
