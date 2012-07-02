@@ -14,6 +14,7 @@ return array(
         'application.models.*',
         'application.components.*',
     ),
+    'language'=>'ru',
     'theme' => 'develop',
     'modules' => array(
         // uncomment the following to enable the Gii tool
@@ -37,12 +38,14 @@ return array(
             'urlFormat' => 'path',
             'showScriptName' => false,
             'rules' => array( 
-           
+               
+               
                 array(
-                    'class' => 'application.components.PageUrlRule'
-                    
+                    'class' => 'application.components.PageUrlRule'                    
                 ),
                 
+                '<lang>/admin/<_c>/<_a>/<id:\d+>'=>'admin/<_c>/<_a>',
+                '<lang>/admin/<_c>/<_a>'=>'admin/<_c>/<_a>',
                 '' => 'site/index'
                
             ),

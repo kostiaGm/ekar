@@ -72,6 +72,9 @@ class PageUrlRule extends CBaseUrlRule
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }
+        
+        
+        
         return $this->_pathInfo;
     }
 
@@ -107,6 +110,7 @@ class PageUrlRule extends CBaseUrlRule
         }
         
         if ($this->isLanguages && $url == $this->_activeLanguage) {
+            Yii::app()->language = $this->_activeLanguage;
             array_shift($urlArray);            
         }
         
@@ -157,6 +161,7 @@ class PageUrlRule extends CBaseUrlRule
         }
        
         if ($this->isLanguages && $url == $this->_activeLanguage) {
+            Yii::app()->language = $this->_activeLanguage;
             array_shift($urlArray);            
         }
         
@@ -172,7 +177,21 @@ class PageUrlRule extends CBaseUrlRule
                 }
             }
         }
+      //  var_dump($this->_pathInfo); die;
         $this->_pathInfo = implode('/', $urlArray);
+        if (isset($urlArray[3]) && is_numeric($urlArray[3])) {
+            $_GET['id'] = $urlArray[3];
+        }
+      // Yii::app()->urlManager->rules['<lang>/(admin|'.$url.')/<_c>/<_a>/<id:\d+>'] = 'admin/<_c>/<_a>';
+       
+       
+//        Yii::app()->urlManager->addRules(array(
+//                    '<lang>/admin/<_c>/<_a>/<id:\d+>'=>'site/index',
+//                   // '<lang>/admin/<_c>/<_a>/<id:\d+>'=>'admin/<_c>/<_a>',
+//                   // '<lang>/admin/<_c>/<_a>'=>'admin/<_c>/<_a>',
+//                  
+//                ));
+        
     }
 
 }
