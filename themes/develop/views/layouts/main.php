@@ -7,6 +7,15 @@
 <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/1.css" type="text/css" media="screen,projection" />
 </head>
 <body>
+    
+<?php
+    $test = new ParseUrl();
+    $testUrl = $test->returnPageArray();
+    if (!$testUrl){
+        die('404');
+    }
+?>
+    
 <div id="container">
   <div id="header">
     <h1><a href="/"><?php echo CHtml::encode(Yii::app()->name); ?></a></h1>
@@ -21,7 +30,10 @@
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
-		)); ?>
+		)); 
+
+    //echo Yii::app()->ParseUrl-> returnPageArray();
+    ?>
   </ul>
   <br class="clear" />
   <div id="sidebar">
