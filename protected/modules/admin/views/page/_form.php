@@ -15,6 +15,12 @@
 		<?php echo $form->textField($model,'href',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'href'); ?>
 	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'url'); ?>
+		<?php echo $form->textField($model->urls,'url'); ?>
+		<?php //echo $form->error($model,'url'); ?>
+	</div>
 
 	
 	<div class="row">

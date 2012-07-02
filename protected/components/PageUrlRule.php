@@ -52,6 +52,15 @@ class PageUrlRule extends CBaseUrlRule
             $route = $this->_activeLanguage.'/'.$route;
         }
         
+        if (!empty($params)) {
+            foreach ($params as $key=>$value) {
+                if ($key == 'id') {
+                    $route .= '/'.$value;
+                }
+                
+            }
+        }
+        
         return $route;
     }
 
@@ -65,7 +74,7 @@ class PageUrlRule extends CBaseUrlRule
     {
         $this->_pathInfo = $pathInfo;
         $this->adminRules();
-       // var_dump($this->_pathInfo); die;
+       
         
         try {
             return $this->runRule();
@@ -73,7 +82,7 @@ class PageUrlRule extends CBaseUrlRule
             throw new Exception($e->getMessage());
         }
         
-        
+   
         
         return $this->_pathInfo;
     }
@@ -155,7 +164,7 @@ class PageUrlRule extends CBaseUrlRule
         
         $url = '';
         $urlArray = explode('/', $this->_pathInfo);
-        
+       
         if (isset($urlArray[0])) {
             $url = $urlArray[0];
         }
@@ -179,6 +188,7 @@ class PageUrlRule extends CBaseUrlRule
         }
       //  var_dump($this->_pathInfo); die;
         $this->_pathInfo = implode('/', $urlArray);
+        
         if (isset($urlArray[3]) && is_numeric($urlArray[3])) {
             $_GET['id'] = $urlArray[3];
         }

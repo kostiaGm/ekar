@@ -31,6 +31,7 @@ class Page extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Page the static model class
 	 */
+  
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -52,7 +53,8 @@ class Page extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pic, hpic, tube, date', 'required'),
+			//array('pic, hpic, tube, date', 'required'),
+			array('position', 'numerical', 'integerOnly'=>true),
 			array('position', 'numerical', 'integerOnly'=>true),
 			array('href, url, header, title, keywords, description, pic, hpic', 'length', 'max'=>255),
 			array('type', 'length', 'max'=>7),
@@ -60,7 +62,7 @@ class Page extends CActiveRecord
 			array('level, date', 'length', 'max'=>20),
 			array('visibility, top', 'length', 'max'=>1),
 			array('language', 'length', 'max'=>2),
-			array('preview, body', 'safe'),
+			//array('preview, body', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, href, type, menu, position, preview, body, level, visibility, top, header, title, keywords, description, language, pic, hpic, tube, date', 'safe', 'on'=>'search'),

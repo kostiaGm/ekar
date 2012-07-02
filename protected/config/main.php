@@ -46,6 +46,7 @@ return array(
                 
                 '<lang>/admin/<_c>/<_a>/<id:\d+>'=>'admin/<_c>/<_a>',
                 '<lang>/admin/<_c>/<_a>'=>'admin/<_c>/<_a>',
+               
                 '' => 'site/index'
                
             ),

@@ -12,20 +12,18 @@ class Urls extends CActiveRecord
 {
 
     /**
-    * Returns the static model of the specified AR class.
-    * @param string $className active record class name.
-    * @return News the static model class
-    */
-    
+     * Returns the static model of the specified AR class.
+     * @param string $className active record class name.
+     * @return News the static model class
+     */
     public static function model($className = __CLASS__)
     {
         return parent::model($className);
     }
 
     /**
-    * @return string the associated database table name
-    */
-    
+     * @return string the associated database table name
+     */
     public function tableName()
     {
         return 'urls';
@@ -33,7 +31,12 @@ class Urls extends CActiveRecord
 
     public function findUrl($url)
     {
-        return $this->find('url=:url', array(':url'=>$url));
+        return $this->find('url=:url', array(':url' => $url));
     }
+
+   
+    
+    
+
 }
 

@@ -89,6 +89,7 @@ class PageController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->loadModel($id);
+        //var_dump($model->urls->recordId); die;
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
