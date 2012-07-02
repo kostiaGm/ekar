@@ -284,6 +284,11 @@ div.form div.row.buttons input {
     height: 25px;
 }
 
-p.hint {
+p.hint, div.errorMessage {
     clear: both;
+}
+
+div.errorMessage {
+    margin-top: 10px;
+    color: #C00;
 }
