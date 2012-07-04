@@ -10523,3 +10523,32 @@ REQUEST_URI=/
 in /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleFilter.php (4)
 in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (13)
 in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (31)
+2012/07/04 11:22:33 [error] [php] Missing argument 1 for EUrlRule::__construct(), called in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php on line 41 and defined (/home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRule.php:19)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl()
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRule.php (19)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (41)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (58)
+2012/07/04 11:23:27 [error] [php] Undefined variable: filter (/home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRule.php:21)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl()
+#1 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#2 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRule.php (21)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (47)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (59)
+2012/07/04 11:23:59 [error] [php] Undefined property: EUrlRuleSections::$_filter (/home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleSections.php:13)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleSections.php (13)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (59)
+in /home/kot/public_html/ekar/www/index.php (13)

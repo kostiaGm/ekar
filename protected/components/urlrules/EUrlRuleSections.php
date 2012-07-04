@@ -9,7 +9,7 @@ class EUrlRuleSections extends EUrlRule
     }
 
     public function parseUrl($manager, $request, $pathInfo, $rawPathInfo)
-    {
+    {       
         return $pathInfo;
     }
 

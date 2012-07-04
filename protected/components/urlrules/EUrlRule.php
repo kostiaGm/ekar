@@ -14,6 +14,12 @@
 
 abstract class EUrlRule
 {
+    protected $_filter;
+    
+    public function __construct($filter)
+    {
+        $this->_filter = $filter;
+    }
     public abstract function createUrl($manager, $route, $params, $ampersand);
     
     public abstract function parseUrl($manager, $request, $pathInfo, $rawPathInfo);
