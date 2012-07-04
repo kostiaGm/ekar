@@ -31,7 +31,8 @@ class Page extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Page the static model class
 	 */
-  
+        public $url;
+        
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -56,7 +57,7 @@ class Page extends CActiveRecord
 			//array('pic, hpic, tube, date', 'required'),
 			array('position', 'numerical', 'integerOnly'=>true),
 			array('position', 'numerical', 'integerOnly'=>true),
-			array('href, url, header, title, keywords, description, pic, hpic', 'length', 'max'=>255),
+			array('href,  header, title, keywords, description, pic, hpic', 'length', 'max'=>255),
 			array('type', 'length', 'max'=>7),
 			array('menu', 'length', 'max'=>10),
 			array('level, date', 'length', 'max'=>20),
@@ -145,4 +146,17 @@ class Page extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        protected function afterSave()
+        {
+            parent::afterSave();
+          /*  parent::afterSave();
+            
+            $urls =Urls::model()->find('recordId=:recordId', array(':recordId'=>$this->id));
+           
+            $urls->url = $this->urls->url;
+            $urls->save();*/
+            
+           
+        }
 }

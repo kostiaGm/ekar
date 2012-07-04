@@ -9775,3 +9775,751 @@ REQUEST_URI=/ru/admin/page/update/142
 in /home/kot/public_html/ekar/www/protected/modules/admin/views/page/_form.php (21)
 in /home/kot/public_html/ekar/www/protected/modules/admin/views/page/update.php (18)
 in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (105)
+2012/07/02 20:58:32 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 20:58:32 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 20:58:32 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 20:58:32 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('url')
+#1 /home/kot/public_html/yii/framework/validators/CStringValidator.php(80): CActiveRecord->__get('url')
+#2 /home/kot/public_html/yii/framework/validators/CValidator.php(197): CStringValidator->validateAttribute(Object(Page), 'url')
+#3 /home/kot/public_html/yii/framework/base/CModel.php(158): CValidator->validate(Object(Page), NULL)
+#4 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(786): CModel->validate(NULL)
+#5 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(99): CActiveRecord->save()
+#6 [internal function]: PageController->actionUpdate('142')
+#7 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#8 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#9 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#18 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#19 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:03:00 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:03:00 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:03:00 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:03:00 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('url')
+#1 /home/kot/public_html/yii/framework/validators/CStringValidator.php(80): CActiveRecord->__get('url')
+#2 /home/kot/public_html/yii/framework/validators/CValidator.php(197): CStringValidator->validateAttribute(Object(Page), 'url')
+#3 /home/kot/public_html/yii/framework/base/CModel.php(158): CValidator->validate(Object(Page), NULL)
+#4 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(786): CModel->validate(NULL)
+#5 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(99): CActiveRecord->save()
+#6 [internal function]: PageController->actionUpdate('142')
+#7 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#8 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#9 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#18 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#19 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:03:48 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:03:48 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:03:48 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:03:48 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('url')
+#1 /home/kot/public_html/yii/framework/validators/CStringValidator.php(80): CActiveRecord->__get('url')
+#2 /home/kot/public_html/yii/framework/validators/CValidator.php(197): CStringValidator->validateAttribute(Object(Page), 'url')
+#3 /home/kot/public_html/yii/framework/base/CModel.php(158): CValidator->validate(Object(Page), NULL)
+#4 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(786): CModel->validate(NULL)
+#5 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(99): CActiveRecord->save()
+#6 [internal function]: PageController->actionUpdate('142')
+#7 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#8 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#9 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#18 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#19 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:06:12 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:12 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:12 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:12 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('url')
+#1 /home/kot/public_html/yii/framework/validators/CStringValidator.php(80): CActiveRecord->__get('url')
+#2 /home/kot/public_html/yii/framework/validators/CValidator.php(197): CStringValidator->validateAttribute(Object(Page), 'url')
+#3 /home/kot/public_html/yii/framework/base/CModel.php(158): CValidator->validate(Object(Page), NULL)
+#4 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(786): CModel->validate(NULL)
+#5 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(99): CActiveRecord->save()
+#6 [internal function]: PageController->actionUpdate('142')
+#7 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#8 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#9 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#18 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#19 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:06:42 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:42 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:42 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:59 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:59 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:06:59 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:08:08 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:08:08 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:08:08 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:08:30 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:08:30 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:08:30 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:09:09 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:09:09 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:09:09 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:09:55 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:09:55 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:09:55 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:10:15 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:10:15 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:10:15 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:12:27 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:12:27 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:12:27 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (98)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:12:27 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('url')
+#1 /home/kot/public_html/ekar/www/protected/models/Page.php(152): CActiveRecord->__get('url')
+#2 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(1063): Page->afterSave()
+#3 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#4 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(99): CActiveRecord->save()
+#5 [internal function]: PageController->actionUpdate('142')
+#6 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#18 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:14:50 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:14:50 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:14:50 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:14:50 [warning] [application] Не удалось присвоить небезопасный атрибут "url" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:17 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:17 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:17 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:17 [warning] [application] Не удалось присвоить небезопасный атрибут "url" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:17 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('url')
+#1 /home/kot/public_html/ekar/www/protected/models/Page.php(153): CActiveRecord->__get('url')
+#2 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(1063): Page->afterSave()
+#3 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#4 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(103): CActiveRecord->save()
+#5 [internal function]: PageController->actionUpdate('142')
+#6 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#18 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:15:43 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:43 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:43 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:15:43 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('url', Array)
+#1 /home/kot/public_html/yii/framework/base/CModel.php(470): CActiveRecord->__set('url', Array)
+#2 /home/kot/public_html/yii/framework/base/CComponent.php(153): CModel->setAttributes(Array)
+#3 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#4 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(102): CActiveRecord->__set('attributes', Array)
+#5 [internal function]: PageController->actionUpdate('142')
+#6 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#18 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:16:45 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:16:45 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:16:45 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:16:45 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('url', Array)
+#1 /home/kot/public_html/yii/framework/base/CModel.php(470): CActiveRecord->__set('url', Array)
+#2 /home/kot/public_html/yii/framework/base/CComponent.php(153): CModel->setAttributes(Array)
+#3 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#4 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(102): CActiveRecord->__set('attributes', Array)
+#5 [internal function]: PageController->actionUpdate('142')
+#6 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#18 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:16:56 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:16:56 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:16:56 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (102)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:16:56 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('url', Array)
+#1 /home/kot/public_html/yii/framework/base/CModel.php(470): CActiveRecord->__set('url', Array)
+#2 /home/kot/public_html/yii/framework/base/CComponent.php(153): CModel->setAttributes(Array)
+#3 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#4 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(102): CActiveRecord->__set('attributes', Array)
+#5 [internal function]: PageController->actionUpdate('142')
+#6 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#18 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/ru/admin/page/update/142
+HTTP_REFERER=http://ekar/ru/admin/page/update/142
+---
+2012/07/02 21:19:34 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:19:34 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:19:34 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:19:57 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:19:57 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:19:57 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:24:03 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:24:03 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:24:03 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:24:13 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:24:13 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:24:13 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:27:38 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:27:38 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/02 21:27:38 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:15:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/03 04:15:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [warning] [application] Не удалось присвоить небезопасный атрибут "url" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:19:31 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('url')
+#1 /home/kot/public_html/ekar/www/protected/models/Page.php(151): CActiveRecord->__get('url')
+#2 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(1063): Page->afterSave()
+#3 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(787): CActiveRecord->update(NULL)
+#4 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(106): CActiveRecord->save()
+#5 [internal function]: PageController->actionUpdate('142')
+#6 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#18 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/page/update/142
+HTTP_REFERER=http://ekar/admin/page/update/142
+---
+2012/07/03 04:20:03 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:20:03 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:20:03 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:20:03 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:20:03 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:20:03 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:20:03 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:20:03 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Page.url".' in /home/kot/public_html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('url', 'indexqqqq')
+#1 /home/kot/public_html/yii/framework/base/CModel.php(470): CActiveRecord->__set('url', 'indexqqqq')
+#2 /home/kot/public_html/yii/framework/base/CComponent.php(153): CModel->setAttributes(Array)
+#3 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#4 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(103): CActiveRecord->__set('attributes', Array)
+#5 [internal function]: PageController->actionUpdate('142')
+#6 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#7 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#8 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#17 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#18 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/page/update/142
+HTTP_REFERER=http://ekar/admin/page/update/142
+---
+2012/07/03 04:26:03 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:26:03 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:26:03 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:26:03 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetch(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. Выполнявшийся SQL-запрос: SELECT * FROM `urls` `t` WHERE recordId=:recordId LIMIT 1.
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (103)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:26:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT * FROM `urls` `t` WHERE recordId=:recordId LIMIT 1' in /home/kot/public_html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /home/kot/public_html/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryRow()
+#2 /home/kot/public_html/yii/framework/db/ar/CActiveRecord.php(1392): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php(103): CActiveRecord->find('recordId=:recor...', Array, '142')
+#4 [internal function]: PageController->actionUpdate('142')
+#5 /home/kot/public_html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#6 /home/kot/public_html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#7 /home/kot/public_html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /home/kot/public_html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/kot/public_html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /home/kot/public_html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /home/kot/public_html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /home/kot/public_html/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/kot/public_html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/kot/public_html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#16 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/page/upda...')
+#17 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/admin/page/update/142
+HTTP_REFERER=http://ekar/admin/page/update/142
+---
+2012/07/03 04:28:25 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:28:25 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:28:25 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:28:25 [warning] [application] Не удалось присвоить небезопасный атрибут "url" класса "Urls".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (104)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:30:50 [warning] [application] Не удалось присвоить небезопасный атрибут "preview" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:30:50 [warning] [application] Не удалось присвоить небезопасный атрибут "body" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:30:50 [warning] [application] Не удалось присвоить небезопасный атрибут "tube" класса "Page".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (100)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/03 04:30:50 [warning] [application] Не удалось присвоить небезопасный атрибут "url" класса "Urls".
+in /home/kot/public_html/ekar/www/protected/modules/admin/controllers/PageController.php (104)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/04 06:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/04 06:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /home/kot/public_html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/07/04 09:12:48 [error] [php] include(/home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleSection.php): failed to open stream: No such file or directory (/home/kot/public_html/yii/framework/YiiBase.php:397)
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(11): spl_autoload_call()
+#1 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(21): UrlRules->_getRuleObject()
+#2 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl()
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#4 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (11)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (21)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/04 09:12:59 [error] [php] include(/home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleSections.php): failed to open stream: No such file or directory (/home/kot/public_html/yii/framework/YiiBase.php:397)
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(11): spl_autoload_call()
+#1 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(21): UrlRules->_getRuleObject()
+#2 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl()
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#4 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (11)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (21)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/04 09:15:20 [error] [php] include(EUrlRule.php): failed to open stream: No such file or directory (/home/kot/public_html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleSections.php(4): spl_autoload_call()
+#1 /home/kot/public_html/yii/framework/YiiBase.php(397): include()
+#2 unknown(0): autoload()
+#3 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(11): spl_autoload_call()
+#4 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(21): UrlRules->_getRuleObject()
+#5 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl()
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleSections.php (4)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (11)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (21)
+2012/07/04 09:23:37 [error] [php] Undefined variable: obj (/home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php:14)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (14)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (24)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/04 09:26:28 [error] [exception.ReflectionException] exception 'ReflectionException' with message 'Class EUrlRuleSections does not exist' in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php:13
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(13): ReflectionClass->__construct('EUrlRuleSection...')
+#1 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(23): UrlRules->_getRuleObject()
+#2 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl(Object(CUrlManager), Object(CHttpRequest), '', '')
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#4 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://ekar/
+---
+2012/07/04 09:29:56 [error] [php] Object of class EUrlRuleSections could not be converted to string (/home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php:13)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (13)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (23)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/04 09:30:25 [error] [php] Object of class EUrlRuleSections could not be converted to string (/home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php:12)
+Stack trace:
+#0 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#1 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (12)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (23)
+in /home/kot/public_html/ekar/www/index.php (13)
+2012/07/04 09:30:48 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "UrlRules._activeRuleClassj".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(13): CComponent->__get('_activeRuleClas...')
+#1 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(23): UrlRules->_getRuleObject()
+#2 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl(Object(CUrlManager), Object(CHttpRequest), '', '')
+#3 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#4 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://ekar/
+---
+2012/07/04 09:35:58 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "UrlRules._filter".' in /home/kot/public_html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(25): CComponent->__get('_filter')
+#1 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl(Object(CUrlManager), Object(CHttpRequest), '', '')
+#2 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl(Object(CHttpRequest))
+#3 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/kot/public_html/ekar/www/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://ekar/
+---
+2012/07/04 09:38:41 [error] [php] include(EUrlRule.php): failed to open stream: No such file or directory (/home/kot/public_html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleFilter.php(4): spl_autoload_call()
+#1 /home/kot/public_html/yii/framework/YiiBase.php(397): include()
+#2 unknown(0): autoload()
+#3 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(13): spl_autoload_call()
+#4 /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php(31): UrlRules->_initRuleFilter()
+#5 /home/kot/public_html/yii/framework/web/CUrlManager.php(367): UrlRules->parseUrl()
+#6 /home/kot/public_html/yii/framework/web/CWebApplication.php(134): CUrlManager->parseUrl()
+#7 /home/kot/public_html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/kot/public_html/ekar/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/kot/public_html/ekar/www/protected/components/urlrules/EUrlRuleFilter.php (4)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (13)
+in /home/kot/public_html/ekar/www/protected/components/urlrules/UrlRules.php (31)

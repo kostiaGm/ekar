@@ -41,7 +41,7 @@ return array(
                
                
                 array(
-                    'class' => 'application.components.PageUrlRule'                    
+                    'class' => 'application.components.urlrules.UrlRules'                    
                 ),
                 
                 '<lang>/admin/<_c>/<_a>/<id:\d+>'=>'admin/<_c>/<_a>',

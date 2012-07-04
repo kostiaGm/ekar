@@ -95,9 +95,22 @@ class PageController extends Controller
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['Page'])) {
+           
+            
             $model->attributes = $_POST['Page'];
-            if ($model->save())
+            
+            if (isset($_POST['Urls']['url'])) { 
+                $urls = Urls::model()->find('recordId=:recordId', array(':recordId' => $model->id));
+              //  $urls->attributes =  $_POST['Urls'];
+                $urls->url =  $_POST['Urls']['url'];
+             
+               $urls->save();
+            }
+            
+            if ($model->save()) {
                 $this->redirect(array('view', 'id' => $model->id));
+                $model->users->save();
+            }
         }
 
         $this->render('update', array(

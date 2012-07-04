@@ -30,6 +30,16 @@ class SiteController extends Controller
     {
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/main.php'
+       /* $pages = Page::model()->findAll();
+
+        foreach ($pages as $page) {
+            if ($page->type != 'link') {
+                $sql = "INSERT INTO `urls`(`parentId`, `recordId`, `url`, `model`, `controller`, `action`)
+                VALUES ('$page->level', '$page->id', '$page->href', 'site', 'site', '" . ($page->type == 'section' ? 'list' : 'detail') . "');";
+                print $sql . '<br>';
+            }
+        }
+        die;*/
         $this->render('index');
     }
 
@@ -68,7 +78,7 @@ class SiteController extends Controller
                 $this->refresh();
             }
         }
-       
+
         $this->render('contact', array('model' => $model));
     }
 
@@ -86,12 +96,12 @@ class SiteController extends Controller
         }
 
         // collect user input data
-      
-        if (isset($_POST['LoginForm'])) { 
+
+        if (isset($_POST['LoginForm'])) {
             $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to the previous page if valid
-         
-          
+
+
             if ($model->validate() && $model->login()) {
                 $this->redirect(Yii::app()->user->returnUrl);
             }
