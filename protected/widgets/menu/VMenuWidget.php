@@ -1,8 +1,18 @@
 <?php
 
-class VMenuWidget extends CWidget
+class VMenuWidget extends CMenu
 {
-    //put your code here
+    private $_model;
+    public function init()
+    {
+        $this->_model = Urls::model();
+        
+        $this->items = $this->_model->initVMenu();    
+
+        parent::init();
+    }
+    
+   
 }
 
 ?>

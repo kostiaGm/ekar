@@ -25,7 +25,10 @@
   </ul>
   <br class="clear" />
   <div id="sidebar">
-    Horisontal menu widget  
+   
+      <?php $this->widget('application.widgets.menu.VMenuWidget');?>
+      
+      
     <div class="sidebarfooter"> <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> <a href="http://www.sixshootermedia.com">6sm</a> <a href="http://www.getfirefox.com">Get FF</a> </div>
     <div id="sidebar_bottom"></div>
   </div>

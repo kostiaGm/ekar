@@ -34,9 +34,40 @@ class Urls extends CActiveRecord
         return $this->find('url=:url', array(':url' => $url));
     }
 
-   
-    
-    
+    public function relations()
+    {
+        // NOTE: you may need to adjust the relation name and the related
+        // class name for the relations automatically generated below.
+        return array(
+            'menu' => array(self::HAS_ONE, 'Page', array('id'=>'recordId'))
+        );
+    }
+
+    public function initVMenu($parenId = 0, $url = '/')
+    {
+        $row = $this->findAll('parentId=:parenId', array(':parenId' => $parenId));
+       // $row = $this->with('menu')->findBySql("SELECT `urls`.`id`, `urls`.`url`, `page`.`header` FROM `page`, `urls` WHERE `urls`.`parentId`='$parenId'");
+        $retArray = array();
+      
+        if (!empty($row)) {
+            foreach ($row as $res) {
+               
+                if (isset($res->menu)) {
+                    $parentUrl = $res->menu->href.'/';
+                    $header =  $res->menu->header;
+                   
+                    $items = $this->initVMenu($res->id, $parentUrl);
+                    $retArray[] = array(
+                        'label' => $header,
+                        'url' => array($url. $res->url),
+                        'items' => $items
+                    );
+                }
+            }
+        }
+
+        return $retArray;
+    }
 
 }
 
