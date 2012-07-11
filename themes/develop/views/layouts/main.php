@@ -5,6 +5,10 @@
 <base href="<?php echo Yii::app()->theme->baseUrl; ?>/" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/1.css" type="text/css" media="screen,projection" />
+
+<!--<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/views/hmenu/menu.css" type="text/css" media="screen,projection" />
+<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/views/hmenu/jquery.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/views/hmenu/menu.js"></script>-->
 </head>
 <body>
 <div id="container">
@@ -12,8 +16,10 @@
     <h1><a href="/"><?php echo CHtml::encode(Yii::app()->name); ?></a></h1>
     <h3>Because blue and red are boring.</h3>
   </div>
-  <ul id="nav">
-    <?php $this->widget('zii.widgets.CMenu',array(
+    <div id="menu">
+  <ul id="nav" class="menu">
+    <?php
+    $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
@@ -21,13 +27,17 @@
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
-		)); ?>
+		)); 
+    
+   /* $this->widget('application.widgets.menu.HMenuWidget');*/
+    ?>
   </ul>
+    </div>
   <br class="clear" />
   <div id="sidebar">
-   
+      <div id="nav">
       <?php $this->widget('application.widgets.menu.VMenuWidget');?>
-      
+      </div>
       
     <div class="sidebarfooter"> <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> <a href="http://www.sixshootermedia.com">6sm</a> <a href="http://www.getfirefox.com">Get FF</a> </div>
     <div id="sidebar_bottom"></div>

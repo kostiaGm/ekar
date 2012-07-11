@@ -64,6 +64,7 @@ class Page extends CActiveRecord
             array('level, date', 'length', 'max' => 20),
             array('visibility, top', 'length', 'max' => 1),
             array('language', 'length', 'max' => 2),
+            array('preview, body', 'safe'),
             //array('preview, body', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
@@ -147,6 +148,37 @@ class Page extends CActiveRecord
 
         return new CActiveDataProvider($this, array(
                     'criteria' => $criteria,
+                ));
+    }
+    
+    public function search2($page='') {
+          $criteria = new CDbCriteria;
+
+        $criteria->compare('id', $this->id, true);
+        $criteria->compare('href', $this->href, true);
+        $criteria->compare('type', $this->type, true);
+        $criteria->compare('menu', $this->menu, true);
+        $criteria->compare('position', $this->position);
+        $criteria->compare('preview', $this->preview, true);
+        $criteria->compare('body', $this->body, true);
+        $criteria->compare('level', $this->level, true);
+        $criteria->compare('visibility', $this->visibility, true);
+        $criteria->compare('top', $this->top, true);
+        $criteria->compare('header', $this->header, true);
+        $criteria->compare('title', $this->title, true);
+        $criteria->compare('keywords', $this->keywords, true);
+        $criteria->compare('description', $this->description, true);
+        $criteria->compare('language', $this->language, true);
+        $criteria->compare('pic', $this->pic, true);
+        $criteria->compare('hpic', $this->hpic, true);
+        $criteria->compare('tube', $this->tube, true);
+        $criteria->compare('date', $this->date, true);
+        if (empty($page)) {
+            $page = 1;
+        }
+        return new CActiveDataProvider($this, array(
+                    'criteria' => $criteria,
+             'pagination' => array('pageSize' => 2, 'currentpage' => $page - 1)
                 ));
     }
 

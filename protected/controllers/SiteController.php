@@ -26,28 +26,52 @@ class SiteController extends Controller
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
      */
-    public function actionIndex($lang = '', $recordId = '')
+    public function actionIndex($lang = '')
     {
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
-       /* $pages = Page::model()->findAll();
+        
+        $data = Urls::model()->find('url=:url', array(':url'=>'index'));
+     
+        $this->pageTitle =  $data->menu->title;
+        Yii::app()->clientScript->registerMetaTag($data->menu->keywords, 'keywords');
+        Yii::app()->clientScript->registerMetaTag($data->menu->description, 'description');
+        $this->render('index', array('data'=>$data));
+    }
 
-        foreach ($pages as $page) {
-            if ($page->type != 'link') {
-                $sql = "INSERT INTO `urls`(`parentId`, `recordId`, `url`, `model`, `controller`, `action`)
-                VALUES ('$page->level', '$page->id', '$page->href', 'site', 'site', '" . ($page->type == 'section' ? 'list' : 'detail') . "');";
-                print $sql . '<br>';
-            }
+    public function actionList($lang = '', $recordId = '', $page = '')
+    {
+        $route = '';
+        if (!empty($page)) {
+            $route = Yii::app()->request->url;
         }
-        die;*/
-        $this->render('index');
+        if (empty($recordId)) {
+            $recordId = 0;
+        }
+        
+        $data = Page::model()->findByPk($recordId);
+       
+        $this->pageTitle =  $data->title;
+        Yii::app()->clientScript->registerMetaTag($data->keywords, 'keywords');
+        Yii::app()->clientScript->registerMetaTag($data->description, 'description');
+        
+        $dataProvider = new CActiveDataProvider('Page', array(
+                    'criteria' => array('condition' => "level=$recordId"),
+                    'pagination' => array('pageSize' => 2, 'currentpage' => $page - 1)
+                ));
+
+
+
+        $this->render('list', array(
+            'dataProvider' => $dataProvider
+        ));
     }
 
     public function actionDetail($lang = '', $recordId = '')
-    {
-        // renders the view file 'protected/views/site/index.php'
-        // using the default layout 'protected/views/layouts/main.php'
-        $this->render('index');
+    {       
+        $data = Page::model()->findByPk($recordId);
+        $this->pageTitle = $data->title;
+        Yii::app()->clientScript->registerMetaTag($data->keywords, 'keywords');
+        Yii::app()->clientScript->registerMetaTag($data->description, 'description');
+        $this->render('detail', array('model' => $data));
     }
 
     /**

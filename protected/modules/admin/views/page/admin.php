@@ -39,7 +39,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'page-grid',
-	'dataProvider'=>$model->search(),
+	'dataProvider'=>$model->search2($page),
 	'filter'=>$model,
 	'columns'=>array(
 		'id',

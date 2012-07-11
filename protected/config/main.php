@@ -13,6 +13,9 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'zii.widgets.CMenu',
+        'application.widgets.menu.*',
+        
     ),
     'language'=>'ru',
     'theme' => 'develop',
@@ -43,10 +46,11 @@ return array(
                 array(
                     'class' => 'application.components.urlrules.UrlRules'                    
                 ),
-                
+                /*
                 '<lang>/admin/<_c>/<_a>/<id:\d+>'=>'admin/<_c>/<_a>',
                 '<lang>/admin/<_c>/<_a>'=>'admin/<_c>/<_a>',
-               
+               */
+                
                 '' => 'site/index'
                
             ),
@@ -76,11 +80,11 @@ return array(
                     'levels' => 'error, warning',
                 ),
             // uncomment the following to show log messages on web pages
-            /*
+          /* 
               array(
               'class'=>'CWebLogRoute',
-              ),
-             */
+              ),*/
+            
             ),
         ),
     ),
