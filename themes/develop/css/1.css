@@ -270,7 +270,7 @@ div.form div.row label {
     
 }
 
-div.form div.row input {
+div.form div.row input, div.form div.row select {
     float: right;
     width: 250px;
     height: 25px;

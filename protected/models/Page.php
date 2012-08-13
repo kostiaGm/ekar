@@ -80,7 +80,8 @@ class Page extends CActiveRecord
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'urls' => array(self::HAS_ONE, 'Urls', 'recordId')
+            'urls' => array(self::HAS_ONE, 'Urls', array('recordId'=>'id'))
+     
         );
     }
     
@@ -152,7 +153,8 @@ class Page extends CActiveRecord
     }
     
     public function search2($page='') {
-          $criteria = new CDbCriteria;
+        $criteria = new CDbCriteria;
+        $criteria->with = array('news');
 
         $criteria->compare('id', $this->id, true);
         $criteria->compare('href', $this->href, true);

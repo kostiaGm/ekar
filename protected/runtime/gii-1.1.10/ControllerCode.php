@@ -1,6 +1,6 @@
 <?php
 return array (
   'template' => 'default',
-  'baseClass' => 'EControllerEdit',
-  'actions' => 'index',
+  'baseClass' => 'Controller',
+  'actions' => 'index, create, update, delete',
 );

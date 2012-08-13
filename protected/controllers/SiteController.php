@@ -28,47 +28,81 @@ class SiteController extends Controller
      */
     public function actionIndex($lang = '')
     {
-        
-        $data = Urls::model()->find('url=:url', array(':url'=>'index'));
-     
-        $this->pageTitle =  $data->menu->title;
-        Yii::app()->clientScript->registerMetaTag($data->menu->keywords, 'keywords');
-        Yii::app()->clientScript->registerMetaTag($data->menu->description, 'description');
-        $this->render('index', array('data'=>$data));
+
+
+        $pages = Page::model()->findAll();
+        $lastInsertId = 0;
+        /*  foreach ($pages as $page) {
+
+          $urls = new Urls();
+          $urls->id = $page->id;
+          $urls->parentId = $page->level;
+          $urls->recordId = $page->id;
+          $urls->url = $page->href;
+          $urls->module = 'site';
+          $urls->controller = 'site';
+          $urls->tableName = 'page';
+          $urls->action = ($page->type != 'section' ? 'detail': 'list');
+          $urls->save();
+
+          $lastInsertId = intval($urls->id);
+          } */
+
+        $data = Page::model()->find('href=:url', array(':url' => 'mainpage'));
+
+        $this->pageTitle = $data->title;
+        Yii::app()->clientScript->registerMetaTag($data->keywords, 'keywords');
+        Yii::app()->clientScript->registerMetaTag($data->description, 'description');
+        $this->render('index', array('data' => $data));
     }
 
     public function actionList($lang = '', $recordId = '', $page = '')
     {
-        $route = '';
-        if (!empty($page)) {
-            $route = Yii::app()->request->url;
-        }
+        /* $route = '';
+          if (!empty($page)) {
+          $route = Yii::app()->request->url;
+          } */
         if (empty($recordId)) {
             $recordId = 0;
         }
-        
+
+
+        $this->breadcrumbs = Yii::app()->menuManager->getBreadcrumbs($recordId);
+        //  $this->breadcrumbs = Yii::app()->pageMenuData->getBreadcrumbs($recordId);
         $data = Page::model()->findByPk($recordId);
-       
-        $this->pageTitle =  $data->title;
-        Yii::app()->clientScript->registerMetaTag($data->keywords, 'keywords');
-        Yii::app()->clientScript->registerMetaTag($data->description, 'description');
+        // print Yii::app()->pageMenuData->getSubUrl($data->id);
+          $this->pageTitle =  $data->title;
+            Yii::app()->clientScript->registerMetaTag($data->keywords, 'keywords');
+            Yii::app()->clientScript->registerMetaTag($data->description, 'description');
         
-        $dataProvider = new CActiveDataProvider('Page', array(
-                    'criteria' => array('condition' => "level=$recordId"),
-                    'pagination' => array('pageSize' => 2, 'currentpage' => $page - 1)
-                ));
+          $dataProvider = new CActiveDataProvider('Page', array(
+          'criteria' => array('condition' => "level=$recordId"),
+          'pagination' => array( 'pageSize' => 12, 'currentpage' => $page - 1),
 
+          //  'pagination' => $ePagination
+          ));
 
+         
+
+        //  $this->render('list');
 
         $this->render('list', array(
-            'dataProvider' => $dataProvider
+            'header' => $data->header,
+            'dataProvider' => $dataProvider,
+            'page' => (!empty($page) ? "/page/$page" : '')
         ));
     }
 
     public function actionDetail($lang = '', $recordId = '')
-    {       
+    {
+
+        $this->breadcrumbs = Yii::app()->menuManager->getBreadcrumbs($recordId);
+
+
         $data = Page::model()->findByPk($recordId);
+
         $this->pageTitle = $data->title;
+        //  print Yii::app()->pageMenuData->getSubUrl($data->id);
         Yii::app()->clientScript->registerMetaTag($data->keywords, 'keywords');
         Yii::app()->clientScript->registerMetaTag($data->description, 'description');
         $this->render('detail', array('model' => $data));
@@ -90,8 +124,16 @@ class SiteController extends Controller
     /**
      * Displays the contact page
      */
-    public function actionContact($lang = '')
+    public function actionContact($lang = '', $recordId = '')
     {
+        $this->breadcrumbs = Yii::app()->pageMenuData->getBreadcrumbs($recordId);
+        $data = Page::model()->findByPk($recordId);
+        $this->pageTitle = $data->title;
+        //  print Yii::app()->pageMenuData->getSubUrl($data->id);
+        Yii::app()->clientScript->registerMetaTag($data->keywords, 'keywords');
+        Yii::app()->clientScript->registerMetaTag($data->description, 'description');
+
+
         $model = new ContactForm;
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
@@ -103,7 +145,7 @@ class SiteController extends Controller
             }
         }
 
-        $this->render('contact', array('model' => $model));
+        $this->render('contact', array('model' => $model, 'header' => $data->header, 'body' => $data->body));
     }
 
     /**

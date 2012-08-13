@@ -21,7 +21,16 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();  
         
+        
+        
         protected $model;
+        
+        public function init()
+        {
+           // $this->breadcrumbs = Yii::app()->pageMenuData->getBreadcrumbs();
+            //var_dump($data); die;
+            
+        }
         
         public function  actionDetail() {
            // $this->model->getDetails();

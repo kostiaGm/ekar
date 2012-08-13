@@ -30,10 +30,20 @@ Yii::import('application.components.urlrules.EUrlRule');
 
 class UrlRules extends CBaseUrlRule
 {
+    
+    //============= params ===========================
+    
+    // ------------ protected -------------------------
 
     protected $_activeRuleClass = 'EUrlRuleSections';
     protected $_filterRuleClass = 'EUrlRuleFilter';
-    protected $_filter;
+    protected $_filter;    
+    
+    
+    
+    // =============== functions =======================    
+    
+    // ------------ protected -------------------------
     
     protected function _initRuleFilter($pathInfo)
     {
@@ -47,6 +57,9 @@ class UrlRules extends CBaseUrlRule
         return new $this->_activeRuleClass($filter);
     }
     
+       
+    // --------------- public --------------------------
+    
     public function createUrl($manager, $route, $params, $ampersand)
     {
         $this->_initRuleFilter($route);
@@ -58,6 +71,8 @@ class UrlRules extends CBaseUrlRule
         $this->_initRuleFilter($pathInfo);       
         return $this->_getRuleObject($this->_filter)->parseUrl($manager, $request, $pathInfo, $rawPathInfo);
     }
+    
+    
 
 }
 

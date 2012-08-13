@@ -11,6 +11,7 @@
 
 class EUrlRuleSections extends EUrlRule
 {
+    
 
     protected function _testUrl(array $url, CModel $urlModel = null)
     {
@@ -43,7 +44,10 @@ class EUrlRuleSections extends EUrlRule
     }
 
     public function createUrl($manager, $route, $params, $ampersand)
-    {        
+    {   
+        if (!$this->_isTest($route)) {
+            return $route;
+        }
        
         if (($key = $this->_filter->createUrlIsSetParams($params)) !== false) {
   
@@ -54,15 +58,20 @@ class EUrlRuleSections extends EUrlRule
             }
             
             return $route . '/page/' . $params[$key];
-        }
+        } 
+      
         return $route;
     }
 
     public function parseUrl($manager, $request, $pathInfo, $rawPathInfo)
     {
+        if (!$this->_isTest($pathInfo)) {
+            return $pathInfo;
+        }
+        
         $urlInfo = $this->_filter->getUrlInfo();
         $_GET = $urlInfo['params'];
-      
+     
         // var_dump($_GET); 
         if (isset($urlInfo['url'][0]) && !empty($urlInfo['url'][0])) {
             //$this->_testUrl($urlInfo['url'], $this->getUrlModel());
@@ -72,8 +81,8 @@ class EUrlRuleSections extends EUrlRule
             if (!empty($data)) {
                 $rule = '';
 
-                if (Yii::app()->defaultController != $data->model) {
-                    $rule .= $data->model;
+                if (Yii::app()->defaultController != $data->module) {
+                    $rule .= $data->module;
                 }
 
                 if (empty($data->controller)) {
@@ -93,8 +102,12 @@ class EUrlRuleSections extends EUrlRule
                 $_GET['recordId'] = $data->recordId;
 
                 return $rule;
+            } else {  
+                    
+                return $urlInfo['url'][0];
             }
         }
+     
         return $pathInfo;
     }
 

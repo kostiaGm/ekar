@@ -1,12 +1,12 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
+
 $this->breadcrumbs=array(
-	'Contact',
+	$header,
 );
 ?>
 
-<h1>Contact Us</h1>
-
+<h1><?php echo $header;?></h1>
+<?php echo $body;?>
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
 <div class="flash-success">

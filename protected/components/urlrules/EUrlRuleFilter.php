@@ -12,7 +12,7 @@ class EUrlRuleFilter
     );
     protected $_filterFields = array(
         'page' => array('value' => '\d+', 'isGet' => false),
-        'sss' => array('isGet' => false)
+        'word' => array('isGet' => false)
     );
     protected $_maxFiltersKeys = 30;
 

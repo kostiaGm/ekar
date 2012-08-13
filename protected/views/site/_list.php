@@ -1,5 +1,9 @@
 <tr>
-    <td><a href="<?php echo Yii::app()->request->url;?>/<?php echo $data->urls->url; ?>"><?php echo $data->header; ?></a></td>    
+    <td> 
+        <?php echo CHtml::link($data->header, array( Yii::app()->menuManager->getPath($data->id)));?>
+     
+    </td>    
+
 </tr>
 
 <tr>

@@ -13,8 +13,15 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.components.inits.*',
+        'application.components.system.*',
         'zii.widgets.CMenu',
         'application.widgets.menu.*',
+        'application.widgets.system.*',
+        'application.components.menumanager.*',
+        
+        /// test
+        'application.menumanager.*',
         
     ),
     'language'=>'ru',
@@ -31,6 +38,13 @@ return array(
     ),
     // application components
     'components' => array(
+   
+        'menuManager' => array('class'=> 'MenuManager') ,
+        
+        'cache'=>array(
+            'class'=>'system.caching.CApcCache'
+            ),
+        
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,
@@ -41,11 +55,14 @@ return array(
             'urlFormat' => 'path',
             'showScriptName' => false,
             'rules' => array( 
-               
+               'menu/create/<type>'=>'menu/create',
+               'menu/<_a>/<id:\d+>'=>'menu/<_a>',
+               'menu/<_a>'=>'menu/<_a>',
                
                 array(
                     'class' => 'application.components.urlrules.UrlRules'                    
                 ),
+                
                 /*
                 '<lang>/admin/<_c>/<_a>/<id:\d+>'=>'admin/<_c>/<_a>',
                 '<lang>/admin/<_c>/<_a>'=>'admin/<_c>/<_a>',
@@ -55,6 +72,9 @@ return array(
                
             ),
         ),
+        
+       
+        
         /*
           'db'=>array(
           'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -67,6 +87,7 @@ return array(
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
+            'enableProfiling'=>true,
         ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
@@ -80,10 +101,10 @@ return array(
                     'levels' => 'error, warning',
                 ),
             // uncomment the following to show log messages on web pages
-          /* 
+       
               array(
               'class'=>'CWebLogRoute',
-              ),*/
+              ),
             
             ),
         ),

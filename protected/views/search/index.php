@@ -1,10 +1,11 @@
-<h1><?php echo $header;?></h1>
+<h1>Поиск</h1>
 <table >
  <?php 
- // -4 зароса
+ 
+// var_dump($pageDataProvider->getData());
  
  $this->widget('zii.widgets.CListView', array(
-        'dataProvider'=>$dataProvider,
+        'dataProvider'=>$pageDataProvider,
      'itemView'=>'_list',
     
       
